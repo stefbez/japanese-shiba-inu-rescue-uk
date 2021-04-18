@@ -1,22 +1,39 @@
 .rescue-logo {
-    max-height: 110px;
+    width: 100%;
+    padding: 1em;
 }
 
+nav.navbar.sidebar {
+    padding: 0;
+}
 
-.sidebar {
+.col.sidebar {
     position: fixed;
-    width: 150px;
+    width: 200px;
+    height: 100vh;
     background-color: #DDD;
     overflow-y: scroll;
     top: 0;
     bottom: 0;
+    padding: 0;
+}
+
+.col.right-main-content {
+    padding: 0;
 }
 
 .main-content {
     position: relative;            
-    margin-left: 150px;
+    margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        margin-top: 56px;
+    }
 }
 
 .desktop-nav {
-    margin-left: 150px;
+    margin-left: 200px;
 }
