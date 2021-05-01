@@ -1,1 +1,1 @@
-# Japanes Shiba Inu Rescue UK
+# Japanese Shiba Inu Rescue UK

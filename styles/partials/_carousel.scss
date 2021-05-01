@@ -1,0 +1,28 @@
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            height: calc(100vh - 150px);
+            @media (min-width: 1140px) {
+                height: calc(100vh - 150px);
+            }
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            &.one {
+                background-image: url('../assets/img/jax.jpg');
+            }
+            &.two {
+                background-image: url('../assets/img/harmony.jpg');
+            }
+            &.three {
+                background-image: url('../assets/img/the-3.jpg');
+            }
+        }
+        // .home-page-text {
+        //     z-index: 9999999999;
+        // }
+    }
+}

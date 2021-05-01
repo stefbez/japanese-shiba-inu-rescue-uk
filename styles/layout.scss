@@ -1,0 +1,114 @@
+@import "partials/variables";
+@import "partials/carousel";
+
+.wrapper {
+    padding: 1em
+}
+
+
+.rescue-logo {
+    width: 100%;
+    padding: 1em;
+}
+
+nav.navbar.sidebar {
+    padding: 0;
+}
+
+.main-content {
+    &.wrapper {
+        padding: 0;
+    }
+    .desktop-nav {
+        background: $dark-blue;
+        background: linear-gradient(180deg, $dark-blue 0%, $blue 100%);
+        background: -moz-linear-gradient(180deg, $dark-blue 0%, $blue 100%);
+        background: -webkit-linear-gradient(180deg, $dark-blue 0%, $blue 100%);
+        margin-left: 200px;
+        height: 150px;
+        @media (min-width: 1140px) {
+            height: 100px;
+        }
+        .nav-header {
+            padding-left: 0;
+            margin: 0;
+            h1 {
+                font-size: 2em;
+                color: white;
+            }
+        }
+        .nav-link-list {
+            padding-left: 0;
+            .header-nav {
+                display: inline-block;
+                color: white;
+                &.facebook {
+                    background: white;
+                    color: $blue;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+    .page-content {
+        background: red;
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+        }
+    }
+    background-color: $light-gray;
+    color: $blue-text;
+    position: relative;            
+    margin-left: 200px;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    @media (min-width: 1140px) {
+        height: calc(100vh - 100px);
+        margin-top: 100px;
+    }
+
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 56px;
+    }
+}
+
+
+.col.sidebar {
+    background: $dark-blue;
+    background: linear-gradient(90deg, $dark-blue 0%, $blue 70%, $blue 100%);
+    background: -moz-linear-gradient(90deg, $dark-blue 0%, $blue 70%, $blue 100%);
+    background: -webkit-linear-gradient(90deg, $dark-blue 0%, $blue 70%, $blue 100%);
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: $blue;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    .navbar {
+        img {
+            padding: 0;
+            border-radius: 50%;
+        }
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+.col.right-main-content {
+    padding: 0;
+}
+
+
