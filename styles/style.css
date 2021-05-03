@@ -35,22 +35,22 @@
 
 #about {
   text-align: center;
-  min-height: 80vh;
+  min-height: 500px;
 }
 
 #adopt {
   text-align: center;
-  min-height: 80vh;
+  min-height: 500px;
 }
 
 #rehome {
   text-align: center;
-  min-height: 80vh;
+  min-height: 500px;
 }
 
 #get-involved {
   text-align: center;
-  min-height: 80vh;
+  min-height: 500px;
 }
 
 .col.sidebar {
@@ -71,6 +71,36 @@
   color: #00247d;
 }
 
+/* colours */
+.color-about {
+  background-color: #a3d4f5;
+}
+
+.color-adopt {
+  background-color: #f3e2ee;
+}
+
+.color-rehome {
+  background-color: #cedade;
+}
+
+.color-involved {
+  background-color: #DFE2E2;
+}
+
+.color-contact {
+  background-color: #b6e2cb;
+}
+
+html body {
+  background-color: #007bff;
+  transition: background-color 1s ease;
+  color: white !important;
+}
+html body .color-undefined {
+  background-color: #007bff !important;
+}
+
 .wrapper {
   padding: 1em;
 }
@@ -85,8 +115,6 @@ nav.navbar.sidebar {
 }
 
 .main-content {
-  background-color: #ebeced;
-  color: #0154c3;
   position: relative;
   margin-left: 200px;
   width: 100%;
@@ -103,4 +131,8 @@ nav.navbar.sidebar {
 
 .col.right-main-content {
   padding: 0;
+}
+
+.page-content {
+  height: 100vh;
 }

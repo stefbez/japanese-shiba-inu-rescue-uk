@@ -1,0 +1,1 @@
+$(window).scroll((function(){var o=$(window),t=$("body"),i=$(".page-content"),n=o.scrollTop()+o.height()/3;i.each((function(){var o=$(this);o.position().top<=n&&o.position().top+o.height()>n&&(t.removeClass((function(o,t){return(t.match(/(^|\s)color-\S+/g)||[]).join(" ")})),t.addClass("color-"+$(this).data("color")))}))})).scroll();
