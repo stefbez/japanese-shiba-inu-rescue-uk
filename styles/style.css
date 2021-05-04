@@ -8,13 +8,17 @@
   position: relative;
 }
 #home h1 {
-  margin: 5%;
   position: absolute;
-  top: 45%;
-  left: 0;
   text-align: center;
-  width: 90%;
   color: white;
+  text-shadow: 0 0 8px black;
+  width: calc(100vw - 200px);
+  bottom: 25%;
+}
+@media (max-width: 768px) {
+  #home h1 {
+    width: 100vw;
+  }
 }
 #home .arrow-section {
   width: 100%;
@@ -53,6 +57,11 @@
   min-height: 500px;
 }
 
+#contact {
+  text-align: center;
+  min-height: 500px;
+}
+
 .col.sidebar {
   background: white;
   position: fixed;
@@ -85,7 +94,7 @@
 }
 
 .color-involved {
-  background-color: #DFE2E2;
+  background-color: #dfe2e2;
 }
 
 .color-contact {
@@ -93,12 +102,9 @@
 }
 
 html body {
-  background-color: #007bff;
+  background-color: #a3d4f5;
   transition: background-color 1s ease;
-  color: white !important;
-}
-html body .color-undefined {
-  background-color: #007bff !important;
+  color: #0154c3 !important;
 }
 
 .wrapper {

@@ -4,17 +4,15 @@
 @import "partials/adopt";
 @import "partials/rehome";
 @import "partials/get-involved";
+@import "partials/contact";
 @import "partials/sidebar";
 @import "partials/color-change";
 
 
 html body {
-    background-color: $blue;
+    background-color: #a3d4f5;
     transition: background-color 1s ease;
-    color: white !important;
-    .color-undefined {
-        background-color: $blue !important;
-    }
+    color: $blue-text !important;
 }
 
 .wrapper {
