@@ -7,6 +7,10 @@ $dark-blue:     #00247d;
 $blue-text:     #0154c3;
 $light-gray:    #ebeced;
 
+// Borders
+
+$border-radius: 15px;
+
 @mixin nav-bg-color {
     background: hsla(223, 100%, 25%, 1);
 
@@ -17,4 +21,21 @@ $light-gray:    #ebeced;
     background: -webkit-radial-gradient(circle, hsla(223, 100%, 25%, 1) 0%, hsla(211, 97%, 42%, 1) 100%);
 
     // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00247D", endColorstr="#0367D4", GradientType=1 );
+}
+
+@mixin section-text-box {
+    width: 95%;
+    @media (min-width: 1200px) {
+        width: 80%;
+        padding: 50px 80px;
+    }
+    position: relative;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: $border-radius;
+    box-shadow: $dark-blue 0px 0px 20px 2px;
+    text-align: center;
+    min-height: 500px;
+    margin: auto;
+    padding: 20px 50px;
 }

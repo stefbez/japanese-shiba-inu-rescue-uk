@@ -1,4 +1,5 @@
 #rehome {
-    text-align: center;
-    min-height: 500px;
+    .rehome-text-box {
+        @include section-text-box;
+    }
 }

@@ -1,4 +1,5 @@
 #adopt {
-    text-align: center;
-    min-height: 500px;
+    .adopt-text-box {
+        @include section-text-box;
+    }
 }

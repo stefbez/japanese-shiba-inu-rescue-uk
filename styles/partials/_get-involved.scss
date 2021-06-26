@@ -1,4 +1,5 @@
 #get-involved {
-    text-align: center;
-    min-height: 500px;
+    .get-involved-text-box {
+        @include section-text-box;
+    }
 }

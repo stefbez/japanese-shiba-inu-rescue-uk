@@ -1,4 +1,6 @@
 #about {
-    text-align: center;
-    min-height: 500px;
+    .about-text-box {
+        @include section-text-box;
+    }
+
 }
