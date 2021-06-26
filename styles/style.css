@@ -1,5 +1,4 @@
 #home {
-  background: url(../assets/img/jax.jpg) no-repeat 50% 10%;
   height: 100vh;
   background-size: cover;
   min-height: 500px;
@@ -7,18 +6,30 @@
   width: 100%;
   position: relative;
 }
-#home h1 {
-  position: absolute;
+#home .wrapper {
+  padding: 0;
+  display: flex;
+}
+#home .wrapper .home-title {
+  flex: 50%;
+}
+#home .wrapper .home-title h1 {
   text-align: center;
   color: white;
   text-shadow: 0 0 8px black;
-  width: calc(100vw - 200px);
-  bottom: 25%;
+  margin-top: 25vh;
 }
-@media (max-width: 768px) {
-  #home h1 {
-    width: 100vw;
-  }
+#home .wrapper .home-img {
+  flex: 50%;
+}
+#home .wrapper .home-img img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: 20% 0%;
+  width: 100%;
+  min-height: 500px;
+  max-height: 800px;
+  border-radius: 0 0 0 50px;
 }
 #home .arrow-section {
   width: 100%;
